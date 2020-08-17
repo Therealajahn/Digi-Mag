@@ -1,0 +1,124 @@
+body{
+    margin: 0;
+    padding: 0;
+    background:rgba(21, 64, 12);
+    display:grid;
+    grid-template-rows: 200px;
+    box-sizing: border-box;
+}
+/* BEGIN BUTTON */
+.begin{
+    justify-self: center;
+    color: white;
+    font-family: 'PT Serif', serif;
+    font-size: 5rem;
+    line-height: 1.2;
+    background: rgba(64, 133, 49);
+    width: 1200px;
+    margin-left: 11.5px;
+    text-align: center;
+}
+/* PAGE STUFF */
+.page{
+   justify-self: center;
+   margin-left: -100px;
+}
+img{
+    position: absolute;
+    margin-top: -100px;
+}
+
+/* FOREGROUND STUFF */
+
+.robots{
+  z-index: 100; 
+}
+
+.under-text{
+    z-index: 80;  
+  }
+
+.adding-white{
+    z-index: 60;  
+  }
+
+.under-drawing{
+    z-index: 50;  
+  }
+
+
+/* VIDEO STUFF */
+.video-stuff{
+    position: absolute;
+}
+.leaves-button{
+    height: 0;
+    width: 0;
+    border-left: 100px solid red;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    margin-left: 1800px;
+}
+.leaf-overlay{ margin-left: 90px;
+    margin-top: 120px;
+    width: 1600px;
+    transform: rotate(90deg);
+    margin-left: -200px;
+    z-index: 43;
+}
+.leaves{
+    transform: rotate(90deg);
+    width: 1600px;
+    height: 1200px;
+    margin-left: -200px;
+    margin-top: -120px;
+}
+
+/* TEXT STUFF */
+
+.page-one-text{
+    position: relative;
+    color: white;
+    font-family: 'PT Serif', serif;
+    z-index: 150;
+    margin-left: 90px;
+    margin-top: 40px;
+    line-height: 1.2;
+}
+
+.top{
+    height: 100px;
+    width: 1000px;
+    display: grid;
+    grid-template-columns: 8% 82%;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        'w line1'
+        'w line2'
+    ;
+    gap:10px;
+}
+.super-letter{
+    grid-area: w;
+    font-size: 6rem;
+    margin-top: -9px;
+}
+.body{
+    /* margin-left: 1.4vw; */
+    font-weight: 550;
+    font-size: 1.12rem
+}
+.line-1{
+    grid-area: line1;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.line-2{
+    grid-area: line2;
+    font-size: 1rem;
+    font-weight: 900;
+}
+
+
+
